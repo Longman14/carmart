@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev  --turbo",
     "build": "prisma generate --no-engine && next build",
+    "netlify-build": "npm install --force && npm run build && prisma generate --no-engine"
     "start": "next start",
     "lint": "next lint"
   },
